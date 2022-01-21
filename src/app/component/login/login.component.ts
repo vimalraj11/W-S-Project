@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   password="";
   check(){
     if( this.email == localStorage.getItem("myEmail") && this.password == localStorage.getItem("myPassword")){
-      this.route.navigate(['/layout']);
+      this.route.navigate(['/layout/home']);
     }
   }
 
