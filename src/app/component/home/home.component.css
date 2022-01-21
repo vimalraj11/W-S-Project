@@ -1,0 +1,14 @@
+.row {
+    padding: 20px;
+    width: 99%;
+}
+
+.row .col-sm-4 img {
+    width: 407px;
+    height: 220px;
+    padding: 10px;
+}
+
+.row .col-sm-3 {
+    text-align: center;
+}

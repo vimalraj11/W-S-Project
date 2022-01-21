@@ -1,0 +1,25 @@
+.navbar-brand img {
+    width: 32px;
+    height: 30px;
+}
+
+.button1 {
+    position: relative;
+    left: 53%;
+}
+
+.btn-warning {
+    margin-left: 8px;
+}
+
+.button1 button {
+    height: 40px;
+}
+
+.button1 .btn .badge {
+    position: absolute;
+    top: -6px;
+    left: 97%;
+    border-radius: 20px;
+    background-color: red;
+}

@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <p>Register your ID</p>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="firstname">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email-Id</label>
+                    <input type="text" class="form-control" placeholder="Enter your Email" [(ngModel)]="email">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" placeholder="Enter your Number" [(ngModel)]="number">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="hide-show">
+                        <input [(ngModel)]="password" id="password-input" [type]="fieldTextType ? 'text' : 'password'" class="form-control" placeholder="Enter your Password"><i class="fa" [ngClass]="{'fa-eye': !fieldTextType,'fa-eye-slash': fieldTextType}"
+                            (click)="toggleFieldTextType()"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <div class="hide-show">
+                        <input [(ngModel)]="cpassword" id="password-input1" [type]="fieldTextType1 ? 'text' : 'password'" class="form-control" placeholder="Reenter your Password"><i class="fa" [ngClass]="{'fa-eye': !fieldTextType1,'fa-eye-slash': fieldTextType1}"
+                            (click)="toggleFieldTextType1()"></i>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn btn-primary" (click)="save()">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
